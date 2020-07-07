@@ -1,12 +1,12 @@
 
 print("This code generates the basis monomials of the spaces of 2 and 3-dimensional homogeneous polynomials of arbitrary degree.")
 
-# dimension = int(input("Enter the dimension: "))
+dimension = int(input("Enter the dimension (must be 2 or 3): "))
 degree = int(input("Enter the degree of the polynomials: "))
 
 #------------------------------------------------------------------------------
 
-if degree == 2:
+if dimension == 2:
     
     for a in range(degree + 1):
         
@@ -22,7 +22,7 @@ if degree == 2:
 
 #------------------------------------------------------------------------------
 
-if degree == 3:
+if dimension == 3:
 
     for a in range(degree + 1):
         
@@ -43,3 +43,6 @@ if degree == 3:
             
             monomial = "a^" + str(a) + "b^" + str(b) + "c^" + str(c)
             print(monomial)
+            
+#------------------------------------------------------------------------------
+            
